@@ -24,7 +24,7 @@ document.getElementById('sendMessage').addEventListener('click', function () {
 
     if (userMessage.trim()) { // Mengecek jika input tidak kosong
         const phoneNumber = '628979429912'; // Ganti dengan nomor WhatsApp yang diinginkan
-        const message = encodeURIComponent('Makasih ya udah inget ulang tahun aku, di hari spesial ini aku mau' + userMessage);
+        const message = encodeURIComponent('Makasih ya udah inget ulang tahun aku, di hari spesial ini aku mau ' + userMessage);
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
         window.open(whatsappURL, '_blank'); // Buka WhatsApp di tab baru
         document.getElementById('wishModal').style.display = 'none'; // Sembunyikan modal
