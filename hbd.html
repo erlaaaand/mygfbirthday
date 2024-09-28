@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun Sayang</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- GSAP JS (Optional, loaded in script.js) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Halaman Pertama: Kartu Pembuka -->
+        <div class="open" id="openCardContainer">
+            <div class="card" id="openCard">
+                <h2>Ada Pesan Buat Kamu</h2>
+                <img src="https://dekatutorial.github.io/spesial_mail.png" alt="Mail Icon">
+                <h3>Tekan Untuk Membuka</h3>
+            </div>
+        </div>
+
+        <!-- Halaman Kedua: Pesan Ulang Tahun -->
+        <div class="messages" id="messages">
+            <!-- Elemen Audio untuk Musik Latar Belakang -->
+            <audio id="backgroundMusic" loop>
+                <source src="hb128.mp3" type="audio/mpeg">
+                <source src="hb128.ogg" type="audio/ogg">
+                Browser Anda tidak mendukung elemen audio.
+            </audio>
+
+            <img src="https://dekatutorial.github.io/spesial_stikerUltah.png" alt="Sticker Ulang Tahun" />
+            <h2>Selamat Ulang Tahun Sayangku</h2>
+            <div class="message-card right">Semoga hari ulang tahunmu penuh dengan kebahagiaan dan cinta.</div>
+            <div class="message-card left">Terima kasih sayang telah menjadi bagian penting dalam hidupku&#9829;.</div>
+            <div class="message-card right">Semoga semua harapan ayang tercapai dengan lancar&#9829;&#9829;.</div>
+            <div class="message-card left">Jangan merasa sendiri ya sayang, ada aku yang selalu nemenin kamu seterusnya.</div>
+            <div class="message-card right">Jaga Kesehatan ya sayang, pola makan di jaga&#9829.</div>
+            <div class="message-card left">Makan mie jangan keseringan!!!</div>
+            <div class="message-card right">ILYSM!!!!!!!!!!!!!!!!!!&#9829&#9829&#9829&#9829</div>
+
+            <!-- Kontrol Musik (Opsional) -->
+            <div class="music-controls">
+                <button id="toggleMusic">Pause Musik</button>
+            </div>
+
+            <!-- Kontrol Navigasi -->
+            <div class="navigate-container">
+                <button id="goToGallery">Lihat Galeri</button>
+            </div>
+
+            <!-- Kontrol Modal -->
+            <div class="heart-container">
+                <span>Pencet love nya</span>
+                <i class="material-icons-sharp" id="loveIcon">favorite</i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk Input Pesan Pengguna -->
+    <div class="modal" id="wishModal">
+        <div class="modal-content">
+            <h3>Tulis Harapanmu</h3>
+            <textarea id="userMessage" placeholder="Tulis pesanmu di sini..."></textarea>
+            <button id="sendMessage">Kirim</button>
+        </div>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- GSAP JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- JavaScript Utama -->
+    <script src="script.js"></script>
+</body>
+
+</html>

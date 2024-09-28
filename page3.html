@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun Sayang - Galeri</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="gallery">
+            <h2 data-aos="fade-down">Galeri Ulang Tahun</h2>
+            <div class="photos">
+                <img src="g1.jpg" alt="Foto 1" data-aos="zoom-in">
+                <img src="g2.jpg" alt="Foto 2" data-aos="zoom-in" data-aos-delay="100">
+                <img src="g3.jpg" alt="Foto 3" data-aos="zoom-in" data-aos-delay="200">
+                <!-- Tambahkan lebih banyak foto sesuai kebutuhan -->
+            </div>
+
+            <audio id="backgroundMusic" loop>
+                <source src="hb128.mp3" type="audio/mpeg">
+                <source src="hb128.ogg" type="audio/ogg">
+                Browser Anda tidak mendukung elemen audio.
+            </audio>
+
+            <div class="additional-wishes">
+                <h3 data-aos="fade-right">Selamat Ulang Tahun Sayangkuuu</h3>
+                <p data-aos="fade-up">Semoga di umur mu yang 19 tahun ini diberi keberuntungan dan kebahagian yang tiada hentinya.</p>
+                <p data-aos="fade-up" data-aos-delay="100">Aku akan selalu ada untukmu, tidak peduli apa pun yang
+                    terjadi.</p>
+                <p data-aos="fade-up" data-aos-delay="200">love you ayy&#9829.</p>
+            </div>
+            <div class="back-container">
+                <button id="backButton">Kembali</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animasi Bintang Berkelap-kelip -->
+    <div class="star-container">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <!-- Tambahkan lebih banyak bintang sesuai kebutuhan -->
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- GSAP JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- Animasi AOS -->
+    <script>
+        AOS.init({
+            duration: 1000, // Durasi animasi
+            once: true, // Hanya animasi sekali saat masuk viewport
+        });
+    </script>
+    <script src="page3.js"></script>
+</body>
+
+</html>
